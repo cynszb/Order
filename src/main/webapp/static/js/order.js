@@ -176,8 +176,6 @@ function showAdd() {
 	html += "<div class='Validform_checktip'></div>";
 	html += "</div>";
 	html += "</div>";
-
-
 	// 结束
 	html += '</div>';
 
