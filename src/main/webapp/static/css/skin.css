@@ -1,0 +1,18 @@
+.layui-layout-admin .layui-header{
+	background-color: #3396d8 !important;
+}
+.layui-bg-black{
+	background-color: #146aa2 !important;
+}
+.hideMenu{
+	background-color: #146aa2 !important;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+	background-color: #009688;
+    color: #fff !important;
+}
+.layui-nav-tree .layui-nav-bar{
+	width: 5px;
+    height: 0;
+    background-color: #009688 !important;
+}

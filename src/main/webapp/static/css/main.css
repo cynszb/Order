@@ -1,0 +1,235 @@
+/*logo*/
+.logo {
+    color: #fff;
+    float: left;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 0 25px;
+    text-align: center;
+    width: 150px;
+}
+/*显示隐藏菜单*/
+.hideMenu {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 15px 15px 0 0;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 5px;
+    color: #fff;
+}
+/*右侧菜单*/
+.layui-nav {
+    background-color: inherit !important;
+}
+.top_menu {
+    position: absolute;
+    right: 0;
+    background: none;
+}
+.top_menu .layui-nav-item .layui-nav-child{
+	top: 60px;
+}
+.component .layui-form-select .layui-edge, .top_menu .layui-nav-item[mobile]{
+    display: none;	
+}
+.layui-nav-item a cite{
+	padding: 0 5px;
+}
+.layui-nav .layui-nav-item>a{
+	color: #fff;
+}
+.layui-layout-admin .layui-side{
+	left: 0;
+}
+.showMenu .layui-body, .showMenu .layui-footer, .showMenu.layui-layout-admin .layui-side, .logo, .top_menu .layui-nav-item[pc], .component, .top_menu .layui-nav-item[mobile], .layui-nav, .layui-layout-admin .layui-main, .site-mobile .layui-side, .layui-layout-admin .layui-side, .site-mobile .site-tree-mobile, .layui-body, .layui-layout-admin .layui-footer, .layui-layout-admin .layui-side, .panel, .panel .panel_icon i{
+	transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+.top_menu.layui-nav .layui-nav-child a:hover, .closeBox.layui-nav .layui-nav-child a:hover{
+	color: #fff;
+    background-color: #5FB878;
+}
+/*右侧内容*/
+.layui-body{
+	overflow: hidden;
+    /*border-left: 2px solid #FF5722;
+    border-top: 2px solid #ff5722;*/
+}
+.top-tabs-box{
+	padding-right: 138px;
+    height: 40px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.marg0{
+	margin: 0;
+}
+.clildFrame.layui-tab-content{
+	padding-right: 0;
+}
+.layui-tab-content{
+	height: 100%;
+    padding: 0;
+}
+.clildFrame.layui-tab-content iframe{
+	width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+}
+#top-tabs-box{
+	padding-right: 138px;
+    height: 40px;
+    border-bottom: 1px solid #e2e2e2;
+}
+#top-tabs {
+    position: absolute;
+    border-bottom: none;
+}
+.layui-tab-item{
+	position: absolute;
+    top: 41px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+.closeBox{
+	position: absolute;
+    right: 0;
+    background-color: #fff !important;
+    color: #000;
+    border-left: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding-left: 0;
+    margin-right: 5px;
+    padding-right: 0;
+}
+.closeBox .layui-nav-item{
+	line-height: 40px;
+}
+.closeBox .layui-nav-more{
+	top: 17px;
+}
+.closeBox .layui-nav-mored{
+	top: 11px;
+}
+.closeBox .layui-nav-item a, .closeBox .layui-nav-item a:hover{
+	color: #000;
+}
+.closeBox .layui-nav-child{
+	top: 42px;
+}
+.closeBox .layui-nav-bar{
+	background-color: transparent;
+}
+/*TAB切换*/
+.layui-tab-title .layui-this{
+	background-color: #1AA094;
+    color: #fff;
+}
+.layui-tab-title .layui-this:after{
+	border:none;
+}
+/*logo*/
+.user-photo{
+    height: 120px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.user-photo a.img{
+	display: block;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.user-photo a.img img{
+	display: block;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 4px solid #44576b;
+}
+.user-photo p{
+	display: block;
+    width: 100%;
+    height: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    white-space: nowrap;
+    line-height: 25px;
+    overflow: hidden;
+}
+/*滚动条*/
+.layui-side-scroll{
+	height: auto;
+}
+/*model*/
+.model-body{
+	padding: 15px;
+}
+.layui-layer{
+	margin: 5px !important;
+	border-radius: 6px !important;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5) !important;
+}
+.layui-layer-title{
+	border-radius: 6px 6px 0 0 !important;
+}
+/*底部*/
+.footer{
+	text-align: center;
+    line-height: 44px;
+    /*border-left: 2px solid #FF5722;*/
+}
+/*lxj*/
+.skin-body{
+	overflow-y: auto ;
+}
+.skin{
+	color: #FFFFFF;
+	width: 32%;
+	height: 100px;
+	float: left;
+	text-align: center;
+	line-height: 100px;
+	position: relative;
+	cursor: pointer;
+}
+#skin02>.skin_icon{
+	display: inline-block;
+}
+.skin_icon{
+	display: none;
+	width: 24px;
+	height: 24px;
+	background: url(../images/right.png) no-repeat;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+.model-body>div.skin:nth-child(3n+2){
+	margin: 0 2%;
+}
+.model-body>div#skin02{
+	background: #393D49;
+}
+.model-body>div#skin{
+	background: #146aa2;
+}
+.model-body>div#skin01{
+	background: orange;
+}

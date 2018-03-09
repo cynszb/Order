@@ -1,0 +1,21 @@
+.layui-layout-admin .layui-header{
+	background-color: #e47214 !important;
+}
+.layui-bg-black{
+	background-color: orange !important;
+}
+.hideMenu{
+	background-color: #1AA094 !important;
+}
+.layui-nav-tree .layui-nav-child a{
+	color: #333;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+	background-color: #009688 !important;
+    color: #fff !important;
+}
+.layui-nav-tree .layui-nav-bar{
+	width: 5px;
+    height: 0;
+    background-color: #009688 !important;
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper 
+PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" 
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.order.mapper.OrderMapper" >
+  
+  <select id="queryOrder" parameterType="com.order.model.Order" resultType="com.order.model.Order" >
+    select 
+    id as id,
+    number as number,
+    phone as phone,
+    create_time as createTime,
+    (SELECT COUNT(1) FROM t_order AS a WHERE a.phone=t_order.phone) as count
+    from t_order 
+    <where>
+			1 = 1
+			<if test="number!=null and number!='' ">
+				and number = #{number}
+			</if>
+			<if test="phone!=null and phone!='' ">
+				and phone = #{phone}
+			</if>
+			<if test="beginTime!=null and beginTime!='' ">
+			and create_time &gt;=
+						date_format(#{beginTime},'%Y-%m-%d %H:%i:%s')
+			</if>
+			<if test="endTime!=null and endTime!='' ">
+			and create_time &lt;
+						date_add(date_format(#{endTime},'%Y-%m-%d'),interval 1 day)
+			</if>
+		</where>
+		order by create_time desc,number asc
+		<if test="flagPage!=1"> limit ${beginRow},${pageSize}  </if>
+  </select>
+  
+   <select id="countOrder" parameterType="com.order.model.Order"
+		resultType="java.lang.Integer">
+		select count(0)
+		from t_order
+		<where>
+			1 = 1
+			<if test="number!=null and number!='' ">
+				and number = #{number}
+			</if>
+			<if test="phone!=null and phone!='' ">
+				and phone = #{phone}
+			</if>
+			<if test="beginTime!=null and beginTime!='' ">
+			and create_time &gt;=
+						date_format(#{beginTime},'%Y-%m-%d %H:%i:%s')
+			</if>
+			<if test="endTime!=null and endTime!='' ">
+			and create_time &lt;
+						date_add(date_format(#{endTime},'%Y-%m-%d'),interval 1 day)
+			</if>
+		</where>
+	</select>
+	
+	 <insert id="insertOrder" parameterType="com.order.model.Order">
+		insert into t_order(number,phone) values(
+			#{number},#{phone}
+		)		
+	</insert>
+  
+</mapper>

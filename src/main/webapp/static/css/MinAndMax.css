@@ -1,0 +1,96 @@
+@media screen and (max-width: 750px){
+	.top_menu .layui-nav-item[mobile] {
+	    display: inline-block;
+	}
+	.layui-nav.top_menu, .layui-nav.top_menu .layui-nav-item a{
+		padding: 0 10px;
+	}
+	.logo {
+    	padding: 0;
+    	width: 80px;
+	}
+	.layui-layout-admin .layui-main{
+		margin-right: 0;
+	}
+	.hideMenu {
+    	display: inline-block;
+	}
+	.layui-layout-admin .layui-main{
+		margin-left: 5px;
+	}
+	.top_menu .layui-nav-item[pc]{
+		display: none !important;
+	}
+	.layui-layout-admin .layui-side{
+		display: inline-block;
+		left: -200px;
+	}
+	.layui-layout-admin .layui-body{
+		left: 0 !important;
+	}
+	.layui-layout-admin .layui-footer{
+		left: 0 !important;
+	}
+	.logo{
+		display: none;
+	}
+}
+@media screen and (max-width: 1050px){
+	.layui-nav.top_menu .layui-nav-item a {
+	    padding: 0 10px;
+	}
+	.panel{
+		width: 49%;
+	}
+	.text-box .lf{
+		width: 100%;
+		margin: 0 !important;
+		margin-bottom: 5px !important;
+	}
+	.layui-layout-admin .layui-side{
+		left: -200px;
+	}
+	.layui-body{
+		left: 0;
+	}
+	.layui-footer{
+		left: 0 !important;
+		
+		
+		
+		
+@media screen and (max-width: 432px){
+	.panel {
+	    width: 100%;
+	}
+	.text-box .lf{
+		width: 100%;
+		margin: 0 !important;
+		margin-bottom: 5px !important;
+	}
+}
+@media (max-width: 767px){
+	.esh-filter-item .slide-list-box > span {
+	    width: 90px !important;
+	}
+	.wipper {
+	    margin-left: 68px !important;
+	}
+	.rq-box .lf {
+    	margin-left: 68px !important;
+	}
+}
+@media (min-width: 992px){
+	.control-label {
+	    min-width: 65px;
+	    width: 5.33333333%; 
+	    margin-bottom: 5px;
+	}
+}
+@media (min-width: 768px){
+	.control-label {
+	    padding-top: 7px;
+	    margin-bottom: 0;
+	    text-align: right;
+	}
+}
