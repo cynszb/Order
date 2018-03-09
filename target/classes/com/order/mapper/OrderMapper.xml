@@ -29,7 +29,7 @@ PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
 						date_add(date_format(#{endTime},'%Y-%m-%d'),interval 1 day)
 			</if>
 		</where>
-		order by create_time desc,number asc
+		order by DATE_FORMAT(create_time , '%Y-%m-%d') DESC,number desc
 		<if test="flagPage!=1"> limit ${beginRow},${pageSize}  </if>
   </select>
   

@@ -171,7 +171,7 @@ function showAdd() {
 	html += "<div  class='layui-input-block'>";
 	//
 	html += "<input   type='text' class='layui-input' placeholder='请输入手机号' id='phone_add' value='' ";
-	html += "datatype='m' nullmsg='手机号不能为空' errormsg='请输入正确的手机号' sucmsg='' />";
+	html += "datatype='/^[1][3,4,5,7,8][0-9]{9}$/' nullmsg='手机号不能为空' errormsg='请输入正确的手机号' sucmsg='' />";
 	//
 	html += "<div class='Validform_checktip'></div>";
 	html += "</div>";
